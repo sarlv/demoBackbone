@@ -1,0 +1,51 @@
+<!doctype html>
+<html class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>BackboneDemo</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <style>
+        body {
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <p>
+        <a href="#main" class="btn btn-primary">page 1</a>
+        <a href="#about" class="btn btn-primary">page 2</a>
+    </p>
+
+    
+        
+    <div class="wrapper"></div>
+
+    <script type="text/html" id="list">
+        
+            <p><strong>name:</strong>
+            <%= first_name %>
+                <%= last_name %>
+                    <br>
+                    <strong>email:</strong>
+                    <%= email %>
+                        <br>
+                        <strong>country:</strong>
+                        <%= country %></p>
+                        
+        </script>
+
+
+
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/underscore/underscore.js"></script>
+    <script src="bower_components/backbone/backbone.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>
